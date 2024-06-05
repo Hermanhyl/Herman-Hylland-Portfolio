@@ -1,0 +1,258 @@
+
+body {
+    max-width: 100%;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #525252;
+    background-size: cover;
+    scroll-behavior: smooth; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-sizing: border-box;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 31px;
+}
+
+nav a {
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    font-family: 'Zilla Slab Highlight';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    color: white;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Intro section */
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(50% 50% at 50% 50%, #525252 0%, #343434 100%);
+    width: 100%;
+    height: 1100px;
+}
+
+.div-p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding-left: 20%;
+    box-sizing: border-box;
+}
+
+.p-developer, .p-front-end {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    padding-right: 10px; 
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #FFFFFF;
+    text-shadow: 14px 23px 21.4px rgba(0, 0, 0, 1);
+}
+
+.p-front-end {
+    font-weight: 100;
+    font-size: 24px;
+}
+
+.p-developer {
+    font-weight: 800;
+    font-size: 35px;
+}
+
+.div-h1 {
+    padding: 20px 0px;
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 80px;
+    color: #FFFFFF;
+    text-shadow: 14px 23px 21.4px rgba(0, 0, 0, 0.4);
+}
+
+.div-h1 h1 {
+    margin: 0;
+}
+
+.p-text {
+    width: 100%;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    text-align: left;
+    text-shadow: 14px 23px 21.4px rgba(0, 0, 0, 1);
+    top: 60%;
+}
+
+.p-text p {
+    padding-left: 70%;
+}
+
+/* Projects section  */
+
+.project-heading h2 {
+    text-shadow: 14px 23px 21.4px rgba(0, 0, 0, 1);
+    margin-top: 20px;
+    margin-bottom: 80px;
+    font-size: 35px;
+    color: white;
+    
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    width: 100%;
+    background: radial-gradient(50% 50% at 50% 50%, #525252 0%, #343434 100%);
+}
+
+.project-box {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 400px;
+    margin: 20px 0;
+}
+
+.project-1 {
+    gap: 30px;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+}
+
+.project-2 {
+    gap: 30px;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+}
+
+.project-3 {
+    gap: 30px;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+}
+
+.project, img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.project h2 {
+    font-family: 'Roboto Condensed';
+    font-size: 28px;
+    color: white;
+}
+
+.project p {
+    font-family: 'Roboto Condensed';
+    font-size: 20px;
+    color: white;
+}
+
+.project a {
+    color: #00f;
+    text-decoration: none;
+}
+
+/* About Section Styles */
+.about-container {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    width: 100%;
+}
+
+.about-box {
+    width: 60%;
+    text-align: center;
+}
+
+.aboutMe img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.aboutMe h3 {
+    font-family: 'Roboto Condensed';
+    font-size: 28px;
+    color: white;
+}
+
+.aboutMe p {
+    font-family: 'Roboto Condensed';
+    font-size: 20px;
+    color: white;
+}
+
+
+.aboutMe button {
+    font-family: 'Roboto Condensed';
+    font-size: 18px;
+    padding: 10px 20px;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.aboutMe button:hover {
+    background-color: #005;
+}
