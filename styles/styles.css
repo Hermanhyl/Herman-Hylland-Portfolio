@@ -38,8 +38,7 @@ header {
     position: fixed;
     top: 0;
     box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.8); /* Background for better readability */
-    z-index: 1000; /* Ensure the header stays on top */
+    
 }
 
 .nav-container {
