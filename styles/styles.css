@@ -31,22 +31,17 @@ body {
 /* Header Styles */
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 30px 5%;
-    width: 100%;
+    max-width: 100%;
     position: fixed;
     top: 0;
     box-sizing: border-box;
 }
 
-.nav-container {
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-}
-
 nav ul {
+    width: 100%;
     display: flex;
     align-items: center;
     padding: 0;
