@@ -30,22 +30,23 @@ body {
 
 /* Header Styles */
 header {
-    display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 30px 5%;
     width: 100%;
     position: fixed;
     top: 0;
     box-sizing: border-box;
-    
+    z-index: 1000;
 }
 
 .nav-container {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 90%;
 }
 
 nav ul {
@@ -63,6 +64,10 @@ nav a {
     color: var(--text-color);
 }
 
+nav a:hover {
+    color: var(--main-bg-color);
+}
+
 .logo {
     font-family: var(--font-logo);
     font-size: var(--large-font-size);
@@ -74,6 +79,7 @@ nav a {
 /* Main Section Styles */
 main {
     display: flex;
+    font-family: var(--font-main);
     justify-content: center;
     align-items: center;
     flex: 1;
@@ -132,7 +138,6 @@ main {
 }
 
 .p-text {
-    width: 100%;
     font-family: var(--font-main);
     font-weight: 300;
     font-size: var(--small-font-size);
@@ -140,11 +145,10 @@ main {
     color: var(--text-color);
     text-align: left;
     text-shadow: 14px 23px 21.4px rgba(0, 0, 0, 1);
-    padding-left: 70%;
+    padding-left: 55%;
 }
 
 /* Projects section  */
-
 .project-heading h2 {
     text-shadow: 14px 23px 21.4px rgba(0, 0, 0, 1);
     margin-top: 20px;
@@ -158,7 +162,7 @@ main {
     flex-direction: column;
     align-items: center;
     max-width: 100%;
-    padding: 50px 20px 0px 20px;
+    padding: 50px 20px 0;
     width: 100%;
     background-color: #343434;
 }
@@ -172,36 +176,21 @@ main {
     margin: 20px 0;
 }
 
-.project-1 {
-    gap: 30px;
-    align-self: flex-start;
+.project-1, .project-2, .project-3 {
     display: flex;
     flex-direction: row;
+    gap: 30px;
 }
 
-.project-1 h3 {
-    font-size: 24px;
+.project-1, .project-3 {
+    align-self: flex-start;
 }
 
 .project-2 {
-    gap: 30px;
     align-self: flex-end;
-    display: flex;
-    flex-direction: row;
 }
 
-.project-2 h3 {
-    font-size: 24px;
-}
-
-.project-3 {
-    gap: 30px;
-    align-self: flex-start;
-    display: flex;
-    flex-direction: row;
-}
-
-.project-3 h3 {
+.project-1 h3, .project-2 h3, .project-3 h3 {
     font-size: 24px;
 }
 
@@ -216,7 +205,7 @@ main {
 }
 
 .project h2 {
-    font-family: 'Roboto Condensed';
+    font-family: var(--font-main);
     font-size: 28px;
     color: white;
 }
@@ -226,7 +215,7 @@ main {
 }
 
 .project p {
-    font-family: 'Roboto Condensed';
+    font-family: var(--font-main);
     font-size: 20px;
     color: white;
 }
@@ -294,7 +283,11 @@ main {
     text-align: left;
     line-height: 28px;
     padding: 0 20%;
-    color: var(--text-color);
+    color: white;
+}
+
+.icons-container a {
+    padding-right: 20px;
 }
 
 /* Social Icons */
@@ -302,82 +295,6 @@ main {
     color: var(--text-color);
     font-size: 40px;
     padding-top: 10px;
-}
-/* Default Styles (Desktop) */
-.project-heading h2 {
-    text-shadow: 14px 23px 21.4px rgba(0, 0, 0, 1);
-    margin-top: 20px;
-    margin-bottom: 80px;
-    font-size: 35px;
-    color: white;
-}
-
-.project-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
-    padding: 50px 20px 0;
-    width: 100%;
-    background-color: #343434;
-}
-
-.project-box {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    height: 400px;
-    margin: 20px 0;
-}
-
-.project-1, .project-2, .project-3 {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-}
-
-.project-1, .project-3 {
-    align-self: flex-start;
-}
-
-.project-2 {
-    align-self: flex-end;
-}
-
-.project-1 h3, .project-2 h3, .project-3 h3 {
-    font-size: 24px;
-}
-
-.project, img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    object-position: top;
-    border-radius: 20px;
-    border: 3px solid white;
-    filter: drop-shadow(18px 33px 13.6px rgba(0, 0, 0, 0.5));
-}
-
-.project h2 {
-    font-family: 'Roboto Condensed';
-    font-size: 28px;
-    color: white;
-}
-
-.text-container {
-    width: 500px;
-}
-
-.project p {
-    font-family: 'Roboto Condensed';
-    font-size: 20px;
-    color: white;
-}
-
-.project a {
-    color: #00f;
-    text-decoration: none;
 }
 
 /* Tablet Styles */
