@@ -28,6 +28,11 @@ body {
     scroll-behavior: smooth;
 }
 
+h4 {
+    color: white;
+    padding-top: 10px;
+}
+
 /* Header Styles */
 header {
     justify-content: center;
@@ -65,7 +70,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--main-bg-color);
+    color: var(--button-hover-bg-color);
 }
 
 .logo {
@@ -176,7 +181,7 @@ main {
     margin: 20px 0;
 }
 
-.project-1, .project-2, .project-3 {
+.project-1, .project-2, .project-3, .project-4 {
     display: flex;
     flex-direction: row;
     gap: 30px;
@@ -186,11 +191,11 @@ main {
     align-self: flex-start;
 }
 
-.project-2 {
+.project-2,  .project-4{
     align-self: flex-end;
 }
 
-.project-1 h3, .project-2 h3, .project-3 h3 {
+.project-1 h3, .project-2 h3, .project-3 h3, .project-4 h3 {
     font-size: 24px;
 }
 
@@ -286,9 +291,48 @@ main {
     color: white;
 }
 
-.icons-container a {
-    padding-right: 20px;
+.contact-container {
+    flex: auto;
 }
+
+.contact-container p {
+    text-align: center;
+}
+
+.icons-container {
+    text-align: center;
+}
+
+.icons-container i {
+    padding: 10px;
+}
+
+.icons-container a {
+    position: relative;
+}
+
+.icons-container a::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: -30px; /* Adjust tooltip position */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #2b2d42; /* Dark slate */
+    color: #edf2f4; /* Light grey */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.icons-container a:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
 
 /* Social Icons */
 .fa-brands {
@@ -296,6 +340,20 @@ main {
     font-size: 40px;
     padding-top: 10px;
 }
+
+/* Footer */
+
+footer{
+    
+    text-align: center;
+}
+
+.footer-info p {
+    flex: auto;
+    color: white;
+    justify-content: space-between;
+}
+
 
 /* Tablet Styles */
 @media (max-width: 1024px) {
@@ -341,7 +399,7 @@ main {
         height: auto;
     }
 
-    .project-1, .project-2, .project-3 {
+    .project-1, .project-2, .project-3, .project-4{
         flex-direction: column;
         align-items: center;
     }
